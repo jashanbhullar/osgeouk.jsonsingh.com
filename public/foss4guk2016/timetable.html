@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Timetable</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<style>
+html {font-family: sans-serif;}
+.presentation_column {background-color: #fec;}
+.workshop_column {background-color: #cef;}
+.break {background-color: #efc;}
+.title {font-weight: bold;}
+.presenter {font-style: italic;}
+.org {font-size: 80%;}
+.important {font-size: 110%; font-weight: bold}
+</style>
+</head>
+<body>
+
+<!-- 
+
+   DO EDIT THIS FILE ON THE WEBSITE!!
+
+   It was derived from the Google Spreadsheet. But its a bit late now... so edit away. I'll try to backport changes!
+
+   DONT DELETE OR INSERT ROWS in the Google Spreadsheet. New rows
+   may be APPENDed but the script depends on the row order. Because
+   there's no other unique simple ID for the talks.
+
+   If a talk is cancelled, mark it as cancelled in a column, DONT 
+   DELETE ROWS.
+
+   
+
+-->
+
+
+<a href="./">Main Conference Page</a>
+
+<h1>PROVISIONAL TIMETABLE (room size in brackets)</h1>
+
+<h1>UPDATES  Wednesday Morning</h1>
+<h2>Workshop Room Swap and More Spaces</h2>
+<p><em>Loading OS MasterMap</em> and <em>qgis2web: webmaps without code</em> have swapped rooms so there are
+now free spaces for the qgis2web workshop. Sign up!</p>
+
+
+<h2>Tuesday</h2>
+<p class="important">Registration from 8:30 in the Explorer House Business Centre</p>
+<table>
+<colgroup span="1"></colgroup>
+<colgroup span="2" class="presentation_column"></colgroup>
+<colgroup span="3" class="workshop_column"></colgroup>
+<thead>
+<tr>
+<th></th>
+<th colspan="2">Presentations</th>
+<th colspan="3">Workshops</th>
+</tr>
+<tr>
+<th>Time</th>
+<th>Solent (150)</th>
+<th>Test (70)</th>
+<th>Hamble (16)</th>
+<th>Meon (8)</th>
+<th>Itchen (12)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>09:30</td>
+<td colspan="2">Intro</td>
+</tr>
+<tr>
+<td>10:00</td>
+<td colspan="2">Ordnance Survey</td>
+</tr>
+<tr>
+<td>10:30</td>
+<td colspan="2"><div class="title">Can Open and Closed Play Nicely Together?</div>
+<div class="presenter">Gary Gale</div>
+<div class="org">what3words</div>
+</td>
+</tr>
+<tr>
+<td>11:00</td>
+<td colspan="5" class="break">Coffee</td>
+</tr>
+<tr>
+<td>11:30</td>
+<td><div class="title">How to draw a polygon</div>
+<div class="presenter">Charles Kennelly</div>
+<div class="org">Esri UK</div>
+</td>
+<td><div class="title">Finding Road Gradients With Opensource Data and Tools</div>
+<div class="presenter">Dave Barter</div>
+<div class="org">Nautoguide Ltd.</div>
+</td>
+<td rowspan="3"><div class="title">Using pgRouting to determine service location and allocate resources</div>
+<div class="presenter">Ross McDonald</div>
+<div class="org">Angus Council</div>
+<div class="presenter">Tim Martin / Ian Bennett</div>
+<div class="org">Ordnance Survey</div>
+</td>
+<td rowspan="3"><div class="title">Don't be afraid to commit</div>
+<div class="presenter">Jo Cook</div>
+<div class="org">Astun Technology</div>
+<div class="presenter"></div>
+<div class="org"></div>
+</td>
+<td rowspan="3"><div class="title">Introduction to GeoServer</div>
+<div class="presenter">Ian Turton</div>
+<div class="org">Astun Technology</div>
+<div class="presenter"></div>
+<div class="org"></div>
+</td>
+</tr>
+<tr>
+<td>12:00</td>
+<td><div class="title">How to teach QGIS</div>
+<div class="presenter">Ant Scott</div>
+<div class="org">Astun Technology</div>
+</td>
+<td><div class="title">Using Blender for 3d and animated mapping</div>
+<div class="presenter">Steven Kay</div>
+<div class="org">thinkWhere</div>
+</td>
+</tr>
+<tr>
+<td>12:30</td>
+<td><div class="title">What time is it? It's Maptime!</div>
+<div class="presenter">Charley Glynn</div>
+<div class="org">Maptime Southampton &amp; Ordnance Survey</div>
+</td>
+<td><div class="title">From 2.5D to 4D Exploring other dimensions</div>
+<div class="presenter">Nicholas Duggan (Dragons8mycat)</div>
+<div class="org">Garsdale Design Ltd</div>
+</td>
+</tr>
+<tr>
+<td>13:00</td>
+<td rowspan="2" colspan="2" class="break">Lunch</td>
+<td rowspan="2"><div class="title">Early Careers Network Lunchtime Surgery</div></td>
+</tr>
+<tr><td>13:30</td></tr>
+<tr>
+<td>14:00</td>
+<td><div class="title">qgis2web: the code behind webmaps without code</div>
+<div class="presenter">Tom Chadwin</div>
+<div class="org">Northumberland National Park</div>
+</td>
+<td><div class="title">Migrating to Open Source GIS - Case study</div>
+<div class="presenter">Saber Razmjooei</div>
+<div class="org">Lutra Consulting</div>
+</td>
+<td rowspan="7"><div class="title">Making Maps in R</div>
+<div class="presenter">Barry Rowlingson</div>
+<div class="org">Medical School, Lancaster University</div>
+<div class="presenter"></div>
+<div class="org"></div>
+</td>
+<td rowspan="7"><div class="title">A gentle introduction to GeoDjango and Openlayers 3</div>
+<div class="presenter">Anusha Chickermane</div>
+<div class="org">Atlantic Geomatics Ltd.</div>
+<div class="presenter"></div>
+<div class="org"></div>
+</td>
+<td rowspan="7"><div class="title">Turning data into information using Open Source tools</div>
+<div class="presenter">Tim Martin</div>
+<div class="org">Ordnance Survey</div>
+<div class="presenter">Ed Watts</div>
+<div class="org">Ordnance Survey</div>
+</td>
+</tr>
+<tr>
+<td>14:30</td>
+<td><div class="title">roadNet: a tale of QGIS, automatic feature updating and repositories in the cloud</div>
+<div class="presenter">Dr John A Stevenson</div>
+<div class="org">thinkWhere</div>
+</td>
+<td><div class="title">Open-Source goodies for Local Government</div>
+<div class="presenter">Simon Miles</div>
+<div class="org">Windsor and Maidenhead </div>
+</td>
+</tr>
+<tr>
+<td>15:00</td>
+<td><div class="title">Improving Open Source GIS Workflow with a SLD Editor</div>
+<div class="presenter">Robert Ward</div>
+<div class="org">SciSys</div>
+</td>
+<td><div class="title">Local Government working towards Scotland-wide spatial data</div>
+<div class="presenter">Ilona Kemeling</div>
+<div class="org">Kemeling Consulting Limited</div>
+</td>
+</tr>
+<tr>
+<td>15:30</td>
+<td colspan="2" class="break">Tea</td>
+</tr>
+<tr>
+<td>16:00</td>
+<td><div class="title">Making the most of Leaflet with Plugins</div>
+<div class="presenter">James Milner</div>
+<div class="org">Ordnance Survey</div>
+</td>
+<td><div class="title">Mapping the Heritage of Dartmoor National Park</div>
+<div class="presenter">Matt Travis</div>
+<div class="org">Dartmoor National Park</div>
+</td>
+</tr>
+<tr>
+<td>16:30</td>
+<td><div class="title">What OpenLayers can do for you? Usages and ecosystem</div>
+<div class="presenter">Thomas Gratier</div>
+<div class="org">WebGeoDataVore</div>
+</td>
+<td><div class="title">Open Source Geo at Defra - a shopping list</div>
+<div class="presenter">Steve Wilkinson</div>
+<div class="org">JNCC</div>
+</td>
+</tr>
+<tr>
+<td>17:00</td>
+<td><div class="title">Making Pretty Web Maps</div>
+<div class="presenter">Ian Turton</div>
+<div class="org">Astun Technology</div>
+</td>
+<td><div class="title">Delivering low cost spatial infrastructure in the cloud</div>
+<div class="presenter">Meghana Garg</div>
+<div class="org">UK Power Network</div>
+</td>
+</tr>
+<tr>
+<td>17:30</td>
+<td></td>
+<td>
+<div class="title">The OSGEO:UK Annual General Meeting</div>Open to all</td>
+</tr>
+</tbody>
+</table>
+<p class="important">From 7pm: The <a href="party.html">FOSS4G UK Party</a></p>
+
+<h2>Wednesday</h2>
+<p class="important">Registration from 8:30 in the Explorer House Business Centre</p>
+<table>
+<colgroup span="1"></colgroup>
+<colgroup span="2" class="presentation_column"></colgroup>
+<colgroup span="3" class="workshop_column"></colgroup>
+<thead>
+<tr>
+<th></th>
+<th colspan="2">Presentations</th>
+<th colspan="3">Workshops</th>
+</tr>
+<tr>
+<th>Time</th>
+<th>Solent (150)</th>
+<th>Test (70)</th>
+<th>Hamble (16)</th>
+<th>Meon (8)</th>
+<th>Itchen (12)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>09:30</td>
+<td><div class="title">GOST - Go implementation of OGC SensorThings API</div>
+<div class="presenter">Bert Temme</div>
+<div class="org">Geodan (http://www.geodan.nl)</div>
+</td>
+<td><div class="title">A machine learning approach to roof shape classification</div>
+<div class="presenter">Isabel Sargent</div>
+<div class="org">Ordnance Survey</div>
+</td>
+<td rowspan="3"><div class="title">Visualising Arts and Humanities Data in QGIS</div>
+<div class="presenter">Tom Armitage</div>
+<div class="org">EDINA, University of Edinburgh</div>
+<div class="presenter">Ross McDonald</div>
+<div class="org">Angus Council</div>
+</td>
+<td rowspan="7"><div class="title">SaaSy maps - Using django-tenants and geodjango to provide webGIS Software-as-a-Service(SaaS)</div>
+<div class="presenter">Anusha Chickermane</div>
+<div class="org">Atlantic Geomatics Ltd.</div>
+<div class="presenter"></div>
+<div class="org"></div>
+</td>
+<td rowspan="7"><div class="title">Getting started with Openlayers</div>
+<div class="presenter">Thomas Gratier</div>
+<div class="org">WebGeoDataVore</div>
+<div class="presenter"></div>
+<div class="org"></div>
+</td>
+</tr>
+<tr>
+<td>10:00</td>
+<td><div class="title">Using Python and Jupyter Notebooks for Geographical Data Munging</div>
+<div class="presenter">Rob Blackwell</div>
+<div class="org">Cranfield University</div>
+</td>
+<td><div class="title">Bulk processing, data sharing and visualization of Sentinel-derived products</div>
+<div class="presenter">Giulio Pagan</div>
+<div class="org">Airbus Defence and Space</div>
+</td>
+</tr>
+<tr>
+<td>10:30</td>
+<td><div class="title">The Hard Thing About Hard Geo Things</div>
+<div class="presenter">James Milner</div>
+<div class="org">Ordnance Survey </div>
+</td>
+<td><div class="title">Processing marine DTM’s - like a boss!</div>
+<div class="presenter">Sam Franklin</div>
+<div class="org">LR Senergy</div>
+</td>
+</tr>
+<tr>
+<td>11:00</td>
+<td colspan="3" class="break">Coffee</td>
+</tr>
+<tr>
+<td>11:30</td>
+<td><div class="title">Using OS network datasets with pgRouting</div>
+<div class="presenter">Ross McDonald</div>
+<div class="org">Angus Council</div>
+</td>
+<td><div class="title">Species distribution modelling using open data</div>
+<div class="presenter">Thomas Starnes</div>
+<div class="org">Amphibian and Reptile Conservation</div>
+</td>
+<td rowspan="3"><div class="title">The need for National level strategy for Open Principles in Geospatial</div>
+<div class="presenter">Suchith Anand</div>
+<div class="org">University of Nottingham</div>
+<div class="presenter"></div>
+<div class="org"></div>
+</td>
+</tr>
+<tr>
+<td>12:00</td>
+<td><div class="title">BRIN indexes on geospatial database</div>
+<div class="presenter">Giuseppe Broccolo</div>
+<div class="org">2ndQuadrant</div>
+</td>
+<td><div class="title">Now you see it: open software for processing open satellite data</div>
+<div class="presenter">Alastair Graham</div>
+<div class="org">Geoger Ltd</div>
+</td>
+</tr>
+<tr>
+<td>12:30</td>
+<td><div class="title">Managing National Load MasterMap and Maintaining History</div>
+<div class="presenter">Aileen Heal</div>
+<div class="org">astun technology</div>
+</td>
+<td><div class="title">A GI Node for the Environment</div>
+<div class="presenter">Matt Debont</div>
+<div class="org">JNCC</div>
+</td>
+</tr>
+<tr>
+<td>13:00</td>
+<td rowspan="2" colspan="2" class="break">Lunch</td>
+<td rowspan="2"><div class="title">Early Careers Network Lunchtime Surgery</div></td>
+</tr>
+<tr><td>13:30</td></tr>
+<tr>
+<td>14:00</td>
+<td><div class="title">Earning your support instead of buying it</div>
+<div class="presenter">Ian Turton</div>
+<div class="org">Astun Technology</div>
+</td>
+<td rowspan="3">UnConference Session</td>
+<td rowspan="3"><div class="title">qgis2web: webmaps without code</div>
+<div class="presenter">Tom Chadwin</div>
+<div class="org">Northumberland National Park</div>
+<div class="presenter"></div>
+<div class="org"></div>
+</td>
+<td rowspan="3"><div class="title">Loading OS MasterMap, OS OpenData and other OS GML datasets using Loader</div>
+<div class="presenter">Aileen Heal</div>
+<div class="org">Astun Technology</div>
+<div class="presenter">Matt Walker</div>
+<div class="org">Astun Technology</div>
+</td>
+<td rowspan="3"><div class="title">GeoFire — Realtime location queries with Firebase</div>
+<div class="presenter">Sebastian Ovide</div>
+<div class="org">Ordnance Survey (Geovation)</div>
+<div class="presenter"></div>
+<div class="org"></div>
+</td>
+</tr>
+<tr>
+<td>14:30</td>
+<td>
+
+<div class="title">Geo4All - Empowering Communities for a better world</div>
+<div class="presenter">Suchith Anand</div>
+<div class="org">University of Nottingham</div>
+
+</td>
+</tr>
+<tr>
+<td>15:00</td>
+<td><div class="title">Open Collaboration and the Price of Butter</div>
+<div class="presenter">Andrea Ross</div>
+<div class="org">Eclipse Foundation</div>
+</td>
+</tr>
+<tr>
+<td>15:30</td>
+<td colspan="5" class="break">Tea</td>
+</tr>
+<tr>
+<td>16:00</td>
+<td colspan="2">
+
+<div class="title">There is no such thing as a free lunch</div>
+<div class="presenter">Steven Feldman</div>
+<div class="org">KnowWhere Consulting</div>
+
+</td>
+</tr>
+<tr>
+<td>16:30</td>
+<td colspan="2" rowspan="2">Closing</td>
+</tr>
+<tr><td>17:00</td></tr>
+</tbody>
+</table>
+<h2>Thursday</h2>
+<p class="important">Registration from 8:30 in the Explorer House Business Centre</p>
+<ul>
+<li>Hackathon</li>
+<li>Code Sprint</li>
+</ul>
+<p>See <a href="codesprints.html">web pages</a> for more details</p>
+
+
+</body>
+</html>
