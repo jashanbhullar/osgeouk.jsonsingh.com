@@ -1,0 +1,44 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import SiteLayout from '../layouts/SiteLayout.astro';
+
+export async function getStaticPaths() {
+  function routePathFromId(id: string): string {
+    if (id === 'index') {
+      return '';
+    }
+    return id;
+  }
+
+  const pages = await getCollection('pages');
+  return pages
+    .map((entry) => {
+      const path = routePathFromId(entry.id);
+      if (!path) {
+        return null;
+      }
+      return {
+        params: { slug: path },
+        props: { id: entry.id },
+      };
+    })
+    .filter(Boolean);
+}
+
+const { id } = Astro.props;
+const page = await getEntry('pages', id);
+
+if (!page) {
+  throw new Error(`Page not found for id: ${id}`);
+}
+
+const { Content } = await render(page);
+const title = page.data.title ?? 'OSGeo:UK';
+const description = page.data.description ?? 'OSGeo UK Local Chapter and FOSS4G:UK community website.';
+---
+
+<SiteLayout title={title} description={description}>
+  <main>
+    <Content />
+  </main>
+</SiteLayout>

@@ -1,0 +1,20 @@
+---
+import { getEntry, render } from 'astro:content';
+import SiteLayout from '../layouts/SiteLayout.astro';
+
+const entry = await getEntry('pages', 'index');
+
+if (!entry) {
+	throw new Error('Home page content entry src/content/pages/index.md is missing.');
+}
+
+const { Content } = await render(entry);
+const title = entry.data.title ?? 'OSGeo:UK';
+const description = entry.data.description ?? 'OSGeo UK Local Chapter and FOSS4G:UK community website.';
+---
+
+<SiteLayout title={title} description={description}>
+	<main>
+		<Content />
+	</main>
+</SiteLayout>

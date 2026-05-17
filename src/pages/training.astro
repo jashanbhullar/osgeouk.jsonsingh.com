@@ -1,0 +1,67 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+import { parse } from 'csv-parse/sync';
+import SiteLayout from '../layouts/SiteLayout.astro';
+
+const csvPath = path.resolve(process.cwd(), '_data/osgeouk_training.csv');
+const csvText = fs.readFileSync(csvPath, 'utf-8');
+
+const rows = parse(csvText, {
+  columns: true,
+  skip_empty_lines: true,
+  trim: true,
+}) as Record<string, string>[];
+
+const headers = rows.length ? Object.keys(rows[0]) : [];
+
+function formatHeader(value: string): string {
+  if (!value) {
+    return value;
+  }
+  return value.charAt(0).toUpperCase() + value.slice(1);
+}
+---
+
+<SiteLayout title="OSGeo UK: Training" description="Training courses related to OSGeo and open source geospatial software.">
+  <main>
+    <h3>Training</h3>
+
+    <table>
+      <thead>
+        <tr>
+          {headers.map((header) => <th>{formatHeader(header)}</th>)}
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((row) => (
+          <tr>
+            {headers.map((header) => {
+              const cell = row[header] ?? '';
+              const isLink = cell.includes('http');
+              return <td>{isLink ? <a href={cell}>More info</a> : cell}</td>;
+            })}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+
+    <h4>Adding courses</h4>
+
+    <p>
+      To add courses to this page: sign-up for a GitHub account, edit
+      {' '}
+      <a href="https://github.com/osgeouk/website/blob/gh-pages/_data/osgeouk_training.csv">osgeouk_training.csv</a>
+      {' '}
+      to include your courses and submit a pull request.
+    </p>
+
+    <p>
+      Courses should be added in date order, and if two are on the same day, alphabetically.
+    </p>
+
+    <p>
+      Please also remove old courses for your organisation when they go out of date.
+    </p>
+  </main>
+</SiteLayout>
