@@ -1,0 +1,23 @@
+{
+  "name": "density-disk",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "foss4guk2025": "cd foss4guk2025 && bundle install &&  bundle exec jekyll build && cd ..",
+    "foss4guk2026": "cd foss4guk2026 && bundle install &&  bundle exec jekyll build && cd ..",
+    "build": "astro build && npm run foss4guk2025 && npm run foss4guk2026",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check:links": "node scripts/check-internal-links.mjs",
+    "verify": "npm run build && npm run check:links"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.2",
+    "astro": "^6.3.2",
+    "csv-parse": "^6.2.1"
+  }
+}

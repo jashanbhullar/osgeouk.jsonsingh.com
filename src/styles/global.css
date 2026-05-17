@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Keep markdown wrappers from imposing an extra content width over the legacy theme. */
+main {
+  margin: 0;
+  padding: 0;
+}
