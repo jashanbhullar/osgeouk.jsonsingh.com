@@ -1,0 +1,61 @@
+header h1 {
+    background-image: url(../images/osgeouk.png);
+    background-repeat: no-repeat;
+    background-size: 28px;
+    padding-left: 32px;
+}
+
+
+/** FOSS4G UK 2016 **/
+
+body.foss4guk2016 .sponsors img {
+    height: 40px;
+    padding: 1em;
+}
+
+body.foss4guk2016 #sailingship {
+    width: 100%;
+}
+
+@media print, screen and (max-width: 960px) {
+
+    body.foss4guk2016 #sailingship {
+        display: none;
+    }
+
+}
+
+/** FOSS4G UK 2018 **/
+@media print, screen and (max-width: 480px) {
+
+    body.foss4guk2016 #sailingship {
+    display: none;
+    }
+
+}
+
+
+body.foss4guk2018 .sponsors img {
+    height: 40px;
+    padding: 1em;
+}
+
+body.foss4guk2018 #sailingship {
+    width: 100%;
+}
+
+@media print, screen and (max-width: 960px) {
+
+    body.foss4guk2018 #sailingship {
+        display: none;
+    }
+
+}
+
+@media print, screen and (max-width: 480px) {
+    
+    body.foss4guk2018 #sailingship {
+    display: none;
+    }
+
+}

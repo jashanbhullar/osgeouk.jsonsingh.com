@@ -1,0 +1,69 @@
+header #logo {
+    background-image: url(../images/OSGeoUK2.png);
+    /*background-image: url(../images/OSGeoUK2.svg);*/
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 140px;
+    background-size: 100%;
+    padding-left: 32px;
+    display:block;
+}
+
+body.foss4guk2016 .sponsors img {
+    height: 40px;
+    padding: 1em;
+}
+
+body.foss4guk2016 #sailingship {
+    width: 100%;
+}
+
+body.foss4guk2018 .sponsors img {
+    height: 40px;
+    padding: 1em;
+}
+
+body.foss4guk2018 #sailingship {
+    width: 100%;
+}
+
+
+/*ul li {
+	list-style-type: none;
+}*/
+
+/*ol li {
+	list-style-type: none;
+}*/
+
+ol ol li {
+	list-style-type: lower-alpha;
+}
+ol ol ol li {
+	list-style-type: lower-roman;
+}
+
+
+@media print, screen and (max-width: 960px) {
+    body.foss4guk2016 #sailingship {
+        display: none;
+    }
+}
+
+@media print, screen and (max-width: 480px) {
+    body.foss4guk2016 #sailingship {
+    display: none;
+    }
+}
+
+@media print, screen and (max-width: 960px) {
+    body.foss4guk2018 #sailingship {
+        display: none;
+    }
+}
+
+@media print, screen and (max-width: 480px) {
+    body.foss4guk2018 #sailingship {
+        display: none;
+    }
+}
