@@ -4,7 +4,7 @@ description: >-
   OSGeo:UK
 baseurl: "/foss4guk2026" # the subpath of your site, e.g. /blog
 url: "https://uk.osgeo.org/foss4guk2026/" # the base hostname & protocol for your site, e.g. https://example.com
-destination: ../_site/foss4guk2026
+destination: ../dist/foss4guk2026
 
 remote_theme: "DigitaleGesellschaft/jekyll-theme-conference@v3.6.6"
 

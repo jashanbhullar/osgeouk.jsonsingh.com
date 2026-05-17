@@ -1,42 +1,51 @@
-# Contributing
+# OSGeo:UK Website
 
-For small edits you can edit via the GitHub interface, simply navigate to the
-file and choose the edit option. Most content is in markdown format and GitHub
-provides a preview option.
+This site is built with Astro and deployed to GitHub Pages.
 
-For more involved edits build the Jekyll site locally:
+## Local development
 
-* Install the dependancies by following along with [setting up your pages site
-  locally with Jekyll][1]
-* Clone the repositiory and checkout the `gh-pages` branch.
-* Make your changes and test with:
+Requirements:
 
-foss4guk2025 uses a separate theme and hence needs to be build separately
-```cd foss4guk2025 && bundle install & bundle exec jekyll build```
+- Node.js 22+
+- npm
 
-```bundle exec jekyll serve```
+Install dependencies:
 
-foss4guk2026 uses a separate theme and hence needs to be build separately
-```cd foss4guk2026 && bundle install & bundle exec jekyll build```
+```bash
+npm ci
+```
 
-```bundle exec jekyll serve```
+Start local dev server:
 
-## Updating training courses
+```bash
+npm run dev
+```
 
-To update the training course table you need to edit
-`_data/osgeouk_training.csv`. Once you've edited the CSV please make sure it's
-valid using <https://csvlint.io/>.
+Build production output:
 
-## Pushing to the live site
+```bash
+npm run build
+```
 
-Once you're happy with your changes and wish to publish them:
+Preview production output locally:
 
-If you don't have commit access to the repository create a pull request via GitHub.
+```bash
+npm run preview
+```
 
-If you have commit access:
+## Content editing
 
-* Pull any upstream changes, merge and test again
-* Commit your changes and push to the gh-pages branch
-* Wait a few minutes for the Jekyll site to be built by GitHub Pages :-)
+- Main migrated markdown content lives in `src/content/pages`.
+- Legacy source markdown is still present in original folders for reference.
+- Training data is driven by `_data/osgeouk_training.csv`.
 
-[1]: https://help.github.com/articles/setting-up-your-pages-site-locally-with-jekyll/
+## Excluded sections
+
+`foss4guk2025` and `foss4guk2026` are intentionally excluded from this migration scope and remain separate themed sites.
+
+## Deployment
+
+Pushes to `gh-pages` trigger `.github/workflows/build.yml`.
+The workflow builds with Astro and publishes `dist` to GitHub Pages.
+
+Custom domain is preserved through `public/CNAME`.
