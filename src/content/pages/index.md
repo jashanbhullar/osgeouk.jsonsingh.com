@@ -5,13 +5,13 @@ title: "OSGeo: UK"
 
 ## FOSS4G:UK 2026 in Leeds on Mon 12th and Tue 13th October 2026
 
-<a href="foss4guk2026"><img src="foss4guk2026/assets/images/logo.svg" alt="FOSS4G:UK 2026 Leeds logo"></a>
+<a href="foss4guk2026/"><img src="foss4guk2026/assets/images/logo.svg" alt="FOSS4G:UK 2026 Leeds logo"></a>
 
 FOSS4G:UK returns to Leeds in 2026 for a two-day in-person event at [Horizon Leeds](https://horizonleeds.co.uk/), with talks and workshops across multiple rooms, networking, and community meetups.
 
 We are planning to build on the successful 2025 format, with details on registration, call for talks, programme, sponsorship and social events being published over the coming months.
 
-[See the FOSS4G:UK 2026 event page](foss4guk2026)
+[See the FOSS4G:UK 2026 event page](foss4guk2026/)
 
 ----
 
@@ -27,9 +27,9 @@ Our AGM was held this year as part of FOSS4G:UK, and the [minutes](https://uk.os
 
 ### FOSS4G:UK 2025 in Leeds on Wed 1st and Thu 2nd October 2025 is over
 
-<a href="https://uk.osgeo.org/foss4guk2025/index.html"><img src="images/foss4g_uk_owl_green.png" style="max-height:200px; margin: auto; display: block;"></a>
+<a href="foss4guk2025/"><img src="images/foss4g_uk_owl_green.png" style="max-height:200px; margin: auto; display: block;"></a>
 
-[FOSS4G:UK 2025](https://uk.osgeo.org/foss4guk2025/index.html) in Leeds is done and dusted! 180 delegates attended over 50 talks and workshops over the two days, we got [great feedback](https://drive.google.com/file/d/12awtfG16wTJ51ZSk7V3bFC6we8wTS1-x/view?usp=sharing) on the event, and have [some thoughts](https://docs.google.com/document/d/1LPYCZq5SPNPDtmDTq0-xULU23YvuKhSfluDk7a5FhcQ/edit?usp=sharing) on how the event could be even better next time.
+[FOSS4G:UK 2025](foss4guk2025/) in Leeds is done and dusted! 180 delegates attended over 50 talks and workshops over the two days, we got [great feedback](https://drive.google.com/file/d/12awtfG16wTJ51ZSk7V3bFC6we8wTS1-x/view?usp=sharing) on the event, and have [some thoughts](https://docs.google.com/document/d/1LPYCZq5SPNPDtmDTq0-xULU23YvuKhSfluDk7a5FhcQ/edit?usp=sharing) on how the event could be even better next time.
 
 Most of the talks were recorded and are available on [YouTube](https://youtube.com/playlist?list=PLCvveKqdciOm-5Mfrppm1-bWmHZeUUwQo&si=s88iaUk4-lnRjrlk).
 

@@ -65,7 +65,7 @@ conference:
   navigation:
     logo:
       name: OSGeo:UK
-      url: "/"
+      url: "/osgeouk.jsonsingh.com/"
       img: "OSGeoUK.svg"
     breakpoint: md
     links:
