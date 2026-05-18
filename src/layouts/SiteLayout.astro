@@ -16,8 +16,19 @@ const {
 } = Astro.props;
 
 const siteUrl = Astro.site ?? new URL('https://uk.osgeo.org');
+const baseUrl = import.meta.env.BASE_URL;
+
+function withBase(path: string): string {
+  if (!path.startsWith('/') || path.startsWith('//')) {
+    return path;
+  }
+  const normalizedBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+  const strippedPath = path.slice(1);
+  return `${normalizedBase}${strippedPath}`;
+}
+
 const canonicalUrl = canonical ? new URL(canonical, siteUrl).toString() : new URL(Astro.url.pathname, siteUrl).toString();
-const ogImageUrl = new URL(ogImage, siteUrl).toString();
+const ogImageUrl = new URL(withBase(ogImage), siteUrl).toString();
 ---
 
 <!doctype html>
@@ -30,11 +41,12 @@ const ogImageUrl = new URL(ogImage, siteUrl).toString();
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="/stylesheets/styles.css" />
-    <link rel="stylesheet" href="/stylesheets/github-light.css" />
-    <link rel="stylesheet" href="/stylesheets/osgeouk_newlogo.css" />
-    <script is:inline src="/javascripts/tea-block.js"></script>
+    <link rel="icon" type="image/svg+xml" href={withBase('/favicon.svg')} />
+    <link rel="icon" href={withBase('/favicon.ico')} sizes="any" />
+    <link rel="stylesheet" href={withBase('/stylesheets/styles.css')} />
+    <link rel="stylesheet" href={withBase('/stylesheets/github-light.css')} />
+    <link rel="stylesheet" href={withBase('/stylesheets/osgeouk_newlogo.css')} />
+    <script is:inline src={withBase('/javascripts/tea-block.js')}></script>
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
@@ -50,7 +62,7 @@ const ogImageUrl = new URL(ogImage, siteUrl).toString();
   <body>
     <div class="wrapper">
       <header>
-        <a id="logo" href="/" title="OSGeo:UK"></a>
+        <a id="logo" href={baseUrl} title="OSGeo:UK"></a>
         <p>OSGeo UK Local Chapter</p>
       </header>
       <section>
@@ -63,6 +75,6 @@ const ogImageUrl = new URL(ogImage, siteUrl).toString();
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-    <script is:inline src="/javascripts/scale.fix.js"></script>
+    <script is:inline src={withBase('/javascripts/scale.fix.js')}></script>
   </body>
 </html>

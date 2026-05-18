@@ -2,7 +2,7 @@ title: FOSS4G:UK 2025
 preposition: at
 description: >-
   OSGeo:UK
-baseurl: "/foss4guk2025" # the subpath of your site, e.g. /blog
+baseurl: "/osgeouk.jsonsingh.com/foss4guk2025" # the subpath of your site, e.g. /blog
 url: "https://uk.osgeo.org/foss4guk2025/" # the base hostname & protocol for your site, e.g. https://example.com
 destination: ../dist/foss4guk2025
 

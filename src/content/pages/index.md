@@ -5,13 +5,13 @@ title: "OSGeo: UK"
 
 ## FOSS4G:UK 2026 in Leeds on Mon 12th and Tue 13th October 2026
 
-[![FOSS4G:UK 2026 Leeds logo](/foss4guk2026/assets/images/logo.svg)](/foss4guk2026)
+<a href="foss4guk2026"><img src="foss4guk2026/assets/images/logo.svg" alt="FOSS4G:UK 2026 Leeds logo"></a>
 
 FOSS4G:UK returns to Leeds in 2026 for a two-day in-person event at [Horizon Leeds](https://horizonleeds.co.uk/), with talks and workshops across multiple rooms, networking, and community meetups.
 
 We are planning to build on the successful 2025 format, with details on registration, call for talks, programme, sponsorship and social events being published over the coming months.
 
-[See the FOSS4G:UK 2026 event page](/foss4guk2026)
+[See the FOSS4G:UK 2026 event page](foss4guk2026)
 
 ----
 
@@ -27,7 +27,7 @@ Our AGM was held this year as part of FOSS4G:UK, and the [minutes](https://uk.os
 
 ### FOSS4G:UK 2025 in Leeds on Wed 1st and Thu 2nd October 2025 is over
 
-<a href="https://uk.osgeo.org/foss4guk2025/index.html"><img src="/images/foss4g_uk_owl_green.png" style="max-height:200px; margin: auto; display: block;"></a>
+<a href="https://uk.osgeo.org/foss4guk2025/index.html"><img src="images/foss4g_uk_owl_green.png" style="max-height:200px; margin: auto; display: block;"></a>
 
 [FOSS4G:UK 2025](https://uk.osgeo.org/foss4guk2025/index.html) in Leeds is done and dusted! 180 delegates attended over 50 talks and workshops over the two days, we got [great feedback](https://drive.google.com/file/d/12awtfG16wTJ51ZSk7V3bFC6we8wTS1-x/view?usp=sharing) on the event, and have [some thoughts](https://docs.google.com/document/d/1LPYCZq5SPNPDtmDTq0-xULU23YvuKhSfluDk7a5FhcQ/edit?usp=sharing) on how the event could be even better next time.
 
@@ -53,13 +53,13 @@ A complete write up is included in the December newsletter, so make sure you are
 
 ### UK Code Sprint - Code by the Coast
 
-<img src="/images/2024-08-code-sprint-photo-2.jpeg" height="150"> <img src="/images/2024-08-code-sprint-photo-1.jpeg" height="150">
+<img src="images/2024-08-code-sprint-photo-2.jpeg" height="150"> <img src="images/2024-08-code-sprint-photo-1.jpeg" height="150">
 
 On Tue 30th July 2024, we had a great day at Code by the Coast, at The Heights, Portland, Dorset. OSGeo:UK's latest code sprint brought 18 people together to work on a number of FOSS4G projects, including Terra Draw and GIFramework Maps. Along with the great coding and networking, we also had some lovey views in an excellent venue.
 
 Many thanks to both OSGeo:UK GoFundGeo and Addresscloud for sponsoring the event, and for those participants who paid for their own tickets - we couldn't have done it without you!
 
-[<img src="/images/addresscloud-logo.png" width="275">](https://www.addresscloud.com) [<img src="/images/OSGeoUK2.png" width="200">](https://uk.osgeo.org)
+[<img src="images/addresscloud-logo.png" width="275">](https://www.addresscloud.com) [<img src="images/OSGeoUK2.png" width="200">](https://uk.osgeo.org)
 
 Check out the [page](code-sprint-2024.html) for more details, and if you have any questions, please email us <span class="osgeoemail"></span>.
 
@@ -86,7 +86,7 @@ See under *Funding* below for more details.
 
 Thinking of an Open Source GIS event, and after some support? Contact us on the mailing list below and tell us your idea! See our [past events](pastevents.html){:target="_newpage"} page for details of events we have supported or organised in the past.
 
-[FOSS4G:UK 2025](https://uk.osgeo.org/foss4guk2025/index.html) | [FOSS4G:UK SW 2024](/foss4guk2024.html) |[FOSS4G:UK Local 2023](/foss4guklocal2023.html) | [FOSS4G:UK Local 2022](/foss4guk2022local/) | [FOSS4GUK Online 2020](/foss4gukonline2020/) | [FOSS4GUK 2019](/foss4guk2019/)
+[FOSS4G:UK 2025](https://uk.osgeo.org/foss4guk2025/index.html) | [FOSS4G:UK SW 2024](foss4guk2024.html) |[FOSS4G:UK Local 2023](foss4guklocal2023.html) | [FOSS4G:UK Local 2022](foss4guk2022local/) | [FOSS4GUK Online 2020](foss4gukonline2020/) | [FOSS4GUK 2019](foss4guk2019/)
 
 See also our [guidelines page](foss4gukguidelines.html){:target="_newpage"} for information on setting up a FOSS4GUK event.
 
@@ -102,9 +102,9 @@ Training providers - see the instructions at the bottom of that page for how to 
 
 ### Legal
 
-OSGeo:UK is an unincorporated organisation. Our current constitution, adopted in October 2025 is [here](files/OSGeoUKConstitution-2025_signed_NB_AS_JS.pdf){:target="_newpage"}. Our previous constitution, adopted in March 2016 and altered by SGM in December 2018, can be found [here](/files/OSGeoUKFinalConstitution_2018_amendments-signed.pdf){:target="_newpage"}.
+OSGeo:UK is an unincorporated organisation. Our current constitution, adopted in October 2025 is [here](files/OSGeoUKConstitution-2025_signed_NB_AS_JS.pdf){:target="_newpage"}. Our previous constitution, adopted in March 2016 and altered by SGM in December 2018, can be found [here](files/OSGeoUKFinalConstitution_2018_amendments-signed.pdf){:target="_newpage"}.
 
-Our previous constitution can be found [here](/files/OSGeo UK Final Constitution - Signed.pdf){:target="_newpage"}.
+Our previous constitution can be found [here](files/OSGeo UK Final Constitution - Signed.pdf){:target="_newpage"}.
 
 **Officers**
 
